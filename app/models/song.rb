@@ -23,7 +23,7 @@ class Song < ActiveRecord::Base
      abracadabras.each do |abracadabra|
        if abracadabra != nil
        abracadabra = Note.find_or_create_by(content: abracadabra)
-       self.abracadabras << abracadabra
+       self.notes << abracadabra
      end
      end
    end
