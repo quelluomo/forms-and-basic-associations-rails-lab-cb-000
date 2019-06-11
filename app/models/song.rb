@@ -21,7 +21,7 @@ class Song < ActiveRecord::Base
 
      def note_contents=(notes)
      notes.each do |note|
-       note = Note.find(:content)
+       note = Note.find(:id)
        self.notes << note
      end
    end
